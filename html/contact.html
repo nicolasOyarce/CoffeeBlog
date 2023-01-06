@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="..css/normalize.css" as="style">
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <link rel="preload" href="..css/style.css" as="style">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title>Coffee Blog </title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="content">
+            <div class="bar">
+                <a class="logo" href="../index.html">
+                    <h1 class="logo__name no-margin text-center">Coffee<span class="logo__bold">Blog</span></h1>
+                </a>
+                <nav class="nav">
+                    <a href="about.html" class="nav__link">About</a>
+                    <a href="courses.html" class="nav__link">Courses</a>
+                    <a href="contact.html" class="nav__link">Contact</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__text">
+            <h2 class="no-margin">Coffee blog with tips and courses</h2>
+            <p class="no-margin">Learn from the experts with the best recipes and tips</p>
+        </div>
+    </header>
+
+    
+    <main class="content">
+        <h3 class="text-center">Contact</h3>
+
+        <div class="contact-bg"></div>
+
+        <form class="form">
+            <div class="field">
+                <label class="field__label" for="name">Name</label>
+                <input class="field__input" type="text" placeholder="Name" id="name">
+            </div>
+            <div class="field">
+                <label class="field__label" for="email">Email</label>
+                <input class="field__input" type="email" placeholder="Email" id="email">
+            </div>
+            <div class="field">
+                <label class="field__label" for="message">Message</label>
+                <textarea class="field__input field__input--textarea" id="message"></textarea>
+            </div>
+            <div>
+                <input class="button main--button" type="submit" value="Send">
+            </div>
+        </form>
+
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="content">
+            <div class="bar bar--footer">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__name no-margin text-center">Coffee<span class="logo__bold">Blog</span></h1>
+                </a>
+                <nav class="nav">
+                    <a href="about.html" class="nav__link">About</a>
+                    <a href="courses.html" class="nav__link">Courses</a>
+                    <a href="contact.html" class="nav__link">Contact</a>
+                </nav>
+            </div>
+            <div class="creator">
+                <p class="creator__name">Created by Nicolas Oyarce</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/modernizr.js"></script>
+    
+</body>
+</html>

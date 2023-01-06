@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Blog </title>
+    <meta name="description" content="Coffee Website">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="/css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="preload" href="/img/blog1.jpg" as="image">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="content">
+            <div class="bar">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__name no-margin text-center">Coffee<span class="logo__bold">Blog</span></h1>
+                </a>
+                <nav class="nav">
+                    <a href="/html/about.html" class="nav__link">About</a>
+                    <a href="/html/courses.html" class="nav__link">Courses</a>
+                    <a href="/html/contact.html" class="nav__link">Contact</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__text">
+            <h2 class="no-margin">Coffee blog with tips and courses</h2>
+            <p class="no-margin">Learn from the experts with the best recipes and tips</p>
+        </div>
+        
+    </header>
+
+    <div class="content main-content">
+
+        <main class="blog">
+            <h3>Our Blog</h3>
+            <article class="entry">
+                <div class="entry__img">
+                    <picture>
+                        <source srcset="/img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="/img/blog1.jpg" alt="img-blog">
+                    </picture>
+                </div>
+                <div class="entry_content">
+                    <h4 class="no-margin">Types of coffee beans</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab inventore odio beatae accusantium, aperiam explicabo velit modi, deleniti atque numquam placeat facere est cupiditate ratione totam adipisci? Ipsa, labore nam.</p>
+                    <a href="/html/entry1.html" class="button main--button">Read Content</a>
+                </div>
+            </article>
+
+            <article class="entry">
+                <div class="entry__img">
+                    <picture>
+                        <source srcset="/img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="/img/blog2.jpg" alt="img-blog">
+                    </picture>
+                </div>
+                <div class="entry_content">
+                    <h4 class="no-margin">Three delicious coffee recipes</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab inventore odio beatae accusantium, aperiam explicabo velit modi, deleniti atque numquam placeat facere est cupiditate ratione totam adipisci? Ipsa, labore nam.</p>
+                    <a href="/html/entry2.html" class="button main--button">Read Content</a>
+                </div>
+            </article>
+
+            <article class="entry">
+                <div class="entry__img">
+                    <picture>
+                        <source srcset="/img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="/img/blog3.jpg" alt="img-blog">
+                    </picture>
+                </div>
+                <div class="entry_content">
+                    <h4 class="no-margin">Benefits of coffee</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab inventore odio beatae accusantium, aperiam explicabo velit modi, deleniti atque numquam placeat facere est cupiditate ratione totam adipisci? Ipsa, labore nam.</p>
+                    <a href="/html/entry3.html" class="button main--button">Read Content</a>
+                </div>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Our Blog and Workshop</h3>
+            <ul class="courses no-padding">
+                <li class="widget-course">
+                    <h4 class="no-margin">Coffee extraction techniques</h4>
+                    <p class="widget-course__label">Price: <span class="widget-course__info">Free</span></p>
+                    <p class="widget-course__label">Quotas: <span class="widget-course__info">20</span></p>
+                    <a href="/html/courses.html" class="button secondary--button">More Info</a>
+                </li>
+
+                <li class="widget-course">
+                    <h4 class="no-margin">Four recipes for beginners</h4>
+                    <p class="widget-course__label">Price: <span class="widget-course__info">Free</span></p>
+                    <p class="widget-course__label">Quotas: <span class="widget-course__info">20</span></p>
+                    <a href="/html/courses.html" class="button secondary--button">More Info</a>
+                </li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <footer class="footer">
+        <div class="content">
+            <div class="bar bar--footer">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__name no-margin text-center">Coffee<span class="logo__bold">Blog</span></h1>
+                </a>
+                <nav class="nav">
+                    <a href="/html/about.html" class="nav__link">About</a>
+                    <a href="/html/courses.html" class="nav__link">Courses</a>
+                    <a href="/html/contact.html" class="nav__link">Contact</a>
+                </nav>
+            </div>
+            <div class="creator">
+                <p class="creator__name">Created by Nicolas Oyarce</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/modernizr.js"></script>
+</body>
+</html>

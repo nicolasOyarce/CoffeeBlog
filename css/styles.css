@@ -1,0 +1,275 @@
+:root {
+    --white: #fff;
+    --back: #000;
+    --main: #784D3C;
+    --grey: #E1E1E1;
+
+    --paragraphsFont: 'Open Sans', sans-serif;
+    --headingFont: 'PT Sans', sans-serif;
+}
+
+
+/* Sniped */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--paragraphsFont);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/* Globally */
+.content {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--headingFont);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 6rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+
+
+/* Utilities */
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.text-center {
+    text-align: center;
+}
+
+/* Header */
+.webp .header {
+    background-image: url(../img/banner.webp);
+}
+.no-webp .header {
+    background-image: url(../img/banner.jpg);
+}
+.header {
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header__text {
+    color: var(--white);
+    text-align: center;
+    margin-top: 5rem;
+}
+.bar {
+    padding-top: 4rem;
+}
+@media (min-width: 768px) {
+    .bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__text {
+        margin-top: 18rem;
+    }
+}
+.logo{
+    color: var(--white);
+}
+.logo__name{
+    font-weight: 400;
+}
+.logo__bold{
+    font-weight: 700;
+}
+@media (min-width: 768px) {
+    .nav {
+        display: flex;
+        gap: 2rem;
+    } 
+}
+.nav__link {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+
+/* Content */
+@media (min-width: 768px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+    
+}
+
+
+/* Article */
+.entry {
+    border-bottom: 2px solid var(--grey);
+    margin-bottom: 2rem;
+}
+.entry:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+.button {
+    display: block;
+    font-family: var(--headingFont);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+@media (min-width: 768px) {
+    .button {
+        display: inline-block;
+    }
+}
+.button:hover {
+    cursor: pointer;
+}
+.main--button {
+    background-color: var(--back);
+}
+.secondary--button {
+    background-color: var(--main);
+}
+
+
+/* Aside */
+.courses {
+    list-style: none;
+}
+.widget-course {
+    border-bottom: 2px solid var(--grey);
+    margin-bottom: 2rem;
+}
+.widget-course:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.widget-course__label,
+.course__label {
+    font-family: var(--headingFont);
+    font-weight: 700;
+}
+.widget-course__info,
+.course__info {
+    font-weight: 400;
+}
+.widget-course__label,
+.widget-course__info,
+.course__label,
+.course__info {
+    font-size: 2rem;
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--back);
+    padding: 0;
+    margin-top: 4rem;
+}
+.bar--footer {
+    padding-bottom: 2rem;
+}
+.creator {
+    text-align: center;
+    border-top: 2px solid var(--grey);
+}
+.creator__name {
+    color: var(--white);
+    margin: .5rem auto auto auto;
+}
+
+
+/* About */
+.main-about {
+    padding: 4rem 0;
+}
+@media (min-width: 768px) {
+    .main-about {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+
+/* Course */
+.course {
+    border-bottom: 2px solid var(--grey);
+    padding: 3rem 0;
+}
+.course:last-of-type {
+    border: none;
+}
+@media (min-width: 768px) {
+    .course {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+
+/* Contact */
+.contact-bg {
+    background-image: url(/img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form {
+    background-color: var(--white);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.field {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.field__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.field__input {
+    flex: 1;
+    border: 1px solid var(--grey);
+}
+.field__input--textarea {
+    height: 20rem;
+}
