@@ -21,19 +21,19 @@ link[0].textContent = 'About';
 
 
 //Create a link
-const newLink = document.createElement('A')
+//const newLink = document.createElement('A')
 
 //Link properties
-newLink.href = 'new-link.html';
-newLink.textContent = 'Link';
-newLink.classList.add('nav__link');
+//newLink.href = 'new-link.html';
+//newLink.textContent = 'Link';
+//newLink.classList.add('nav__link');
 
 
 //Add to document
-const navegation = document.querySelector('.nav');
-navegation.appendChild(newLink);
+//const navegation = document.querySelector('.nav');
+//navegation.appendChild(newLink);
 
-console.log(newLink);
+//console.log(newLink);
 
 
 
